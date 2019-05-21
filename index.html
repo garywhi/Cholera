@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+	<head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width">
+        <meta name="description" content="Data visualizations of Cholera outbreak in Soho London 1854">
+        <meta name="author" content="Gary Wong">
+        <title>Cholera Outbreak</title>
+        <link rel="stylesheet" href="./css/style.css">
+
+		<script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/numeric/1.2.6/numeric.min.js"></script>
+		<link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css" integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="crossorigin=""/>
+		<script src="https://unpkg.com/leaflet@1.3.3/dist/leaflet.js" integrity="sha512-tAGcCfR4Sc5ZP5ZoVz0quoZDYX5aCtEm/eu1KhSLj2c9eFrylXZknQYmxUssFaVJKvvc0dJQixhGjG2yXWiV9Q==" crossorigin=""></script>
+	</head>
+
+	<body>
+        <section class="scroll">
+                <header>
+                    <!--<h1>Cholera Outbreak</h1>-->
+                </header>
+            
+                <section id="showcase">
+                    <div class="container">
+                        <h1>Cholera Outbreak</h1>
+                        <h3>Soho London 1854</h3>
+                        <p>Mid August of 1854, marked the start of an epidemic that would decimate the population in Soho London. The culprit, <i>Vibrio cholerae</i>, was thought to be an airborne disease. However, John Snow, a doctor who opened a practice at 54 Firth St. in Soho, believed the source of the outbreak was from contaminated water. His investigation led him to the conclusion that the popular Broad Street water pump was the source of the outbreak.</p>
+                    </div>
+                </section>
+            
+                <section id="boxes">
+                    <div class="container">
+                        <div class="box" style="padding-top: 20px; ">
+                            <img src="./img/cholera_map.jpg" style="width: 55%">
+                            <p>John Snow visualized the data he gathered from his investigation by creating black bars in places where the was a cholera incident. The more incidents there were, the taller the black bars.</p>
+                        </div>
+                        <div class="box" id="choleraMap"></div>
+                        <div class="box" id="choleraDeathsChart"></div>
+                        <div class="box">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                        </div>
+                        <div class="box">
+                            <h3>Bar thing</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                        </div>
+                        <div class="box">
+                            <h3>Pie thing</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                        </div>
+                        <div class="box">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                        </div>
+                        <div class="box">
+                            <h3>Map thing</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                        </div>
+                        
+                    </div>
+                </section>
+
+            
+                <footer>
+                    <p>Gary Wong footer thing where i got data from</p>
+                </footer>
+        </section>
+    </body>
+    
+
+	<script src="./charts.js"></script>
+
+</html>

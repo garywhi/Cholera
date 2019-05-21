@@ -1,0 +1,122 @@
+body{
+    font: 15px/1.5 Arial, Helvetica, sans-serif;
+    padding: 0;
+    margin: 0;
+    background-color: #f4f4f4;
+    background-image: url(../img/Soho.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+/* Global */
+.container{
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+ul{
+    margin: 0;
+    padding: 0;
+}
+
+.dark{
+    padding: 15px;
+    background: #35424a;
+    color: #ffffff;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+/* Scroll */
+.scroll{
+    /* background-color: #35424a; */
+    background: rgba(53, 68, 74, .0);
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-top: 10%;
+}
+
+/* Showcase */
+#showcase{
+    min-height: 300px;
+    text-align: center;
+    color: #686b6d;
+    background-color: #f4f4f4;
+}
+
+#showcase h1{
+    margin-top: 50px;
+    font-size: 35px;
+    margin-bottom: 10px;
+}
+
+#showcase p{
+    font-size: 20px;
+}
+
+/* Boxes */
+#boxes{
+    background: rgba(255, 255, 255, 0.85);
+    color: #686b6d
+}
+
+#boxes .box{
+    float: left;
+    text-align: center;
+    width: 100%;
+}
+
+#boxes .box img{
+    width: 75%;
+    
+}
+
+#boxes button{
+    width: 75%;
+}
+
+footer{
+    padding: 20px;
+    color: #686b6d;
+    background-color: #f4f4f4;
+    text-align: center;
+    margin-bottom: 10%;
+}
+
+/* Media Queries */
+@media(max-width: 768px){
+    header #name,
+    header nav,
+    header nav li,
+    #newsletter h1,
+    #newsletter form,
+    #boxes .box{
+        float: none;
+        text-align: center;
+        width: 100%;
+    }
+
+    header{
+        padding-bottom: 20px;
+    }
+
+    #showcase h1{
+        margin-top: 40px;
+    }
+
+    #newsletter button{
+        display: block;
+        width: 100%;
+    }
+
+    #newsletter form input[type="email"]{
+        width: 100%;
+        margin-bottom: 5px;
+    }
+
+    #boxes .box{
+        height: auto;
+    }
+}
