@@ -1,5 +1,5 @@
 //Cholera Attacks & Death Line Chart
-Plotly.d3.tsv("https://raw.githubusercontent.com/garyjw/project1_cholera/master/Cholera%20Deaths.tsv", function(err, rows){
+Plotly.d3.tsv("https://raw.githubusercontent.com/garywhi/Cholera/master/data/Cholera%20Deaths.tsv", function(err, rows){
     function unpack(rows, key) {
         return rows.map(function(row) { return row[key]; });
 }
@@ -65,8 +65,8 @@ Plotly.d3.tsv("https://raw.githubusercontent.com/garyjw/project1_cholera/master/
     Plotly.newPlot("choleraDeathsChart", chartData, chartLayout, {displayModeBar: false});
 });
 
-Plotly.d3.tsv("https://raw.githubusercontent.com/garyjw/project1_cholera/master/Cholera%20Death%20Locations.tsv", function(err, rows){
-			Plotly.d3.tsv("https://raw.githubusercontent.com/garyjw/project1_cholera/master/Cholera%20Pump%20Locations.tsv", function(err2, rows2){
+Plotly.d3.tsv("https://raw.githubusercontent.com/garywhi/Cholera/master/data/Cholera%20Death%20Locations.tsv", function(err, rows){
+			Plotly.d3.tsv("https://raw.githubusercontent.com/garywhi/Cholera/master/data/Cholera%20Pump%20Locations.tsv", function(err2, rows2){
 				function unpack(rows, key) {
 		        return rows.map(function(row) { return row[key]; });
 		    }
