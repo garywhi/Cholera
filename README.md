@@ -1,5 +1,6 @@
 # Cholera School Project
-Inline-style: 
-![alt text](img/cholera_map.jpg "Logo Title Text 1")
 
-Data Visualization using plot.ly javascript library.
+..* Data Visualization of Cholera Outbreak in Soho London 1854 using plot.ly javascript library.
+..* Map retrieved using Mapbox key
+..* Data Supplied by Robin Wilson
+..* Information about Cholera Outbreak by Dr. Mark Barton
